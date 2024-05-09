@@ -1,0 +1,28 @@
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{float}
+
+% Page margins
+\usepackage[top=3cm,bottom=4cm,right=3cm,left=3cm]{geometry}
+
+% Headers and footers for title
+\usepackage{fancyhdr}
+
+\fancypagestyle{fancy}{
+    \fancyhf{}
+    \fancyhead[L]{DELEC - Reto BJT}
+    \fancyhead[C]{Marc Sanchis Llinares}
+    \fancyhead[R]{\includegraphics[width=0.2\textwidth]{IMG/signature.png}}
+    \fancyfoot[C]{\thepage}
+}
+
+% Note box
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\newtcolorbox{notebox}{colback=black!5!white, colframe=black}
+\newcommand{\note}[1]{
+\begin{notebox}
+    $\blacktriangleright$ \textit{#1}
+\end{notebox}}
